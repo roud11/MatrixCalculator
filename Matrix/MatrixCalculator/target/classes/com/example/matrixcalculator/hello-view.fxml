@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #674846;" vgap="10" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.matrixcalculator.HelloController">
+  <children>
+    <Button fx:id="loadMatrix1Button" onAction="#loadMatrix1" prefHeight="30.0" prefWidth="226.0" text="Загрузить матрицу 1">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Button>
+    <Button fx:id="loadMatrix2Button" onAction="#loadMatrix2" prefHeight="30.0" prefWidth="228.0" text="Загрузить матрицу 2" GridPane.columnIndex="2">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Button>
+    <Button fx:id="addButton" onAction="#add" prefHeight="25.0" prefWidth="225.0" text="Сложение" GridPane.rowIndex="15">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Button>
+    <Button fx:id="subtractButton" onAction="#subtract" prefHeight="30.0" prefWidth="198.0" text="Вычитание" GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.rowIndex="15">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Button>
+    <Button fx:id="multiplyButton" onAction="#multiply" prefHeight="30.0" prefWidth="202.0" text="Умножение" GridPane.columnIndex="17" GridPane.rowIndex="15">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Button>
+    <Label fx:id="matrix1Label" alignment="CENTER" prefHeight="226.0" prefWidth="226.0" style="-fx-background-color: #FDD9B5;" text="Matrix 1" textAlignment="CENTER" GridPane.rowIndex="4">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+    <Label fx:id="resultLabel" alignment="CENTER" prefHeight="226.0" prefWidth="218.0" style="-fx-background-color: #FDD9B5;" text="Result Matrix" GridPane.columnIndex="17" GridPane.rowIndex="4">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+    <Label fx:id="matrix2Label" alignment="CENTER" prefHeight="226.0" prefWidth="222.0" style="-fx-background-color: #FDD9B5;" text="Matrix 2" GridPane.columnIndex="2" GridPane.rowIndex="4">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+    <Label prefHeight="34.0" prefWidth="39.0" style="text: #674846;" text="=" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true" GridPane.columnIndex="9" GridPane.rowIndex="4">
+      <font>
+        <Font name="System Bold Italic" size="54.0" />
+      </font>
+    </Label>
+    <Button fx:id="determinant1Button" onAction="#calculateDeterminant1" prefHeight="25.0" prefWidth="225.0" text="Определитель 1" GridPane.rowIndex="5">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Button>
+    <Button fx:id="determinant2Button" onAction="#calculateDeterminant2" prefHeight="25.0" prefWidth="225.0" text="Определитель 2" GridPane.columnIndex="2" GridPane.rowIndex="5">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Button>
+    <Label fx:id="determinant1Text" alignment="CENTER" contentDisplay="CENTER" prefHeight="10.0" prefWidth="195.0" style="-fx-background-color: #FDD9B5;" GridPane.rowIndex="7">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+
+
+    <Label fx:id="determinant2Text" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="193.0" style="-fx-background-color: #FDD9B5;" GridPane.columnIndex="2" GridPane.rowIndex="7">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+
+
+  </children>
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints />
+    <ColumnConstraints fillWidth="false" minWidth="20.0" />
+    <ColumnConstraints />
+    <ColumnConstraints />
+    <ColumnConstraints />
+    <ColumnConstraints maxWidth="50.0" minWidth="0.0" prefWidth="41.0" />
+    <ColumnConstraints maxWidth="50.0" minWidth="0.0" prefWidth="41.0" />
+    <ColumnConstraints maxWidth="50.0" minWidth="0.0" prefWidth="41.0" />
+    <ColumnConstraints maxWidth="50.0" minWidth="0.0" prefWidth="41.0" />
+    <ColumnConstraints maxWidth="50.0" minWidth="0.0" prefWidth="41.0" />
+    <ColumnConstraints maxWidth="50.0" minWidth="0.0" prefWidth="41.0" />
+    <ColumnConstraints maxWidth="50.0" minWidth="0.0" prefWidth="41.0" />
+    <ColumnConstraints maxWidth="50.0" minWidth="0.0" prefWidth="41.0" />
+    <ColumnConstraints />
+    <ColumnConstraints />
+    <ColumnConstraints maxWidth="39.0" minWidth="0.0" prefWidth="0.0" />
+    <ColumnConstraints maxWidth="234.0" minWidth="196.0" prefWidth="205.0" />
+    <ColumnConstraints />
+    <ColumnConstraints />
+    <ColumnConstraints />
+    <ColumnConstraints />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+  </rowConstraints>
+</GridPane>

@@ -1,0 +1,7 @@
+com\example\matrixcalculator\MatrixWriter.class
+module-info.class
+com\example\matrixcalculator\Launcher.class
+com\example\matrixcalculator\HelloApplication.class
+com\example\matrixcalculator\MatrixOperations.class
+com\example\matrixcalculator\HelloController$MatrixOperation.class
+com\example\matrixcalculator\HelloController.class
